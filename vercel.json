@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "nuke_bot.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "nuke_bot.py"
+    }
+  ]
+}
